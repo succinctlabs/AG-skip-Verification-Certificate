@@ -19,12 +19,13 @@ jobs:
           persist-credentials: false
       - name: Run rejection tests and full certificate
         run: |
+          # The Sage runtime image provides Python through `sage -python`.
           docker run --rm --user 0:0 \
             --volume "$PWD:/work" --workdir /work \
             --env DOT_SAGE=/tmp/sage \
             --entrypoint /bin/bash \
             sagemath/sagemath:10.8@sha256:e2e4747b0e1ea8753a9cb5a399314a8b2c25fcefaf69ba85b22ee075829d09ea \
-            -euc 'sage -python F2_human_audit/test_certificate.py; python3 verify.py'
+            -euc 'sage -python F2_human_audit/test_certificate.py; sage -python verify.py'
       - name: Save verification report and log
         if: always()
         uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
