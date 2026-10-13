@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "Please cite the accompanying paper and record the commit used for verification."
+title: "AG-skip verification certificate"
+type: software
+authors:
+  - family-names: Dalal
+    given-names: Rahul
+  - family-names: Bünz
+    given-names: Benedikt
+  - family-names: Hemo
+    given-names: Tamir
+  - family-names: Rothblum
+    given-names: Ron D.
+repository-code: "https://github.com/succinctlabs/AG-skip-Verification-Certificate"
+license:
+  - MIT
+  - Apache-2.0
+preferred-citation:
+  type: article
+  title: "Speeding up Sumcheck using Algebraic Geometry"
+  authors:
+    - family-names: Dalal
+      given-names: Rahul
+    - family-names: Bünz
+      given-names: Benedikt
+    - family-names: Hemo
+      given-names: Tamir
+    - family-names: Rothblum
+      given-names: Ron D.
+  year: 2026
+  url: "https://github.com/succinctlabs/AG-skip-Verification-Certificate/blob/main/F2_human_audit/paper.pdf"

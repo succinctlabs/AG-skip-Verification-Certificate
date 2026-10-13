@@ -1,0 +1,10 @@
+# Verification output and Python/Sage caches
+.audit/
+*.sage.py
+__pycache__/
+*.py[cod]
+
+# Local environments and editor files
+.venv/
+.env
+.DS_Store
