@@ -68,12 +68,6 @@ formalization. Seeded runtime checks also exercise the sampler and evaluators.
 | [`F2_human_audit/`](F2_human_audit/) | Self-contained certificate, input data, audit guide, tests, and paper |
 | [`.github/workflows/verify.yml`](.github/workflows/verify.yml) | Full verification and rejection tests in a pinned SageMath 10.8 environment |
 
-The certificate data and checking code come from revision
-[`0e95326e83ab46a29828904bd5cadb1e7f916552`](https://github.com/succinctlabs/AG_codes/tree/0e95326e83ab46a29828904bd5cadb1e7f916552)
-of the research repository. This release extracts the equation-field check
-into `check_F2_coordinate_field.sage` and preserves the certificate data.
-It includes no search runs, construction scripts, or F₄ material.
-
 ## Tests and paper cross-check
 
 ```sh
@@ -106,5 +100,4 @@ retain its JSON report.
 ## License
 
 Dual-licensed under either of [Apache License, Version 2.0](LICENSE-APACHE)
-or [MIT license](LICENSE-MIT) at your option, following
-[Veil's formal verification repository](https://github.com/succinctlabs/veil-formal-verification#license).
+or [MIT license](LICENSE-MIT) at your option.
